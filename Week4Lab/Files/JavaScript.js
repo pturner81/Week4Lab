@@ -1,4 +1,4 @@
-﻿var x = 0; var y = 0; var z = 0; var ct = 0; var rt = 0; var mt = 0; var gt = 0;
+﻿var x = 0; var y = 0; var z = 0; var ct = 0; var rt = 0; var mt = 0; var gt = 0; var stax = 0; var t = 0;
 function Item1()
 {
     x = x + 1;
@@ -30,7 +30,15 @@ function Item3() {
 }
 function CheckOut()
 {
-    gt = ct + rt + mt;
+    t = ct + rt + mt;
 
-    document.getElementById("checkout").innerText = gt.toFixed(2);
+    document.getElementById("checkout").innerText = t.toFixed(2);
+
+    stax = t * .06;
+
+    document.getElementById("tax").innerText = stax.toFixed(2);
+
+    gt = stax + t;
+
+    document.getElementById("grandTotal").innerText = gt.toFixed(2);
 }
