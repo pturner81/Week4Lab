@@ -7,7 +7,7 @@ function Item1()
 
     ct = x * .99;
 
-    document.getElementById("ctotal").innerText = ct;
+    document.getElementById("ctotal").innerText = ct.toFixed(2);
 }
 function Item2()
 {
@@ -17,7 +17,7 @@ function Item2()
 
     rt = y * 2.49;
 
-    document.getElementById("rtotal").innerText = rt;
+    document.getElementById("rtotal").innerText = rt.toFixed(2);
 }
 function Item3() {
     z = z + 1;
@@ -26,11 +26,11 @@ function Item3() {
 
     mt = z * 2.99;
 
-    document.getElementById("mtotal").innerText = mt;
+    document.getElementById("mtotal").innerText = mt.toFixed(2);
 }
 function CheckOut()
 {
-    gt = (ct + rt + mt);
+    gt = ct + rt + mt;
 
-    document.getElementById("checkout").innerText = gt;
+    document.getElementById("checkout").innerText = gt.toFixed(2);
 }
